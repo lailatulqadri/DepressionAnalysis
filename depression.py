@@ -10,7 +10,7 @@ st.title("Extracting Depression Linguistic Features by using Natural Language Pr
 st.text("Let's play with empath library to extract general linguistic features from text")
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
-st.button("Analyse", on_click = run_empath)
+
 
 
 def run_empath():
@@ -21,7 +21,8 @@ def run_empath():
     st.dataframe(df)
     #st.expender(st.write("testing"))
   
-    
+
+st.button("Analyse", on_click = run_empath)
     
     
 
