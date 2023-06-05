@@ -23,8 +23,8 @@ def run_empath():
     #st.expender(st.write("testing"))
   
 
-st.button("Analyse", on_click = run_empath)
-df = pd.DataFrame([on_click])
+empath_output = st.button("Analyse", on_click = run_empath)
+df = pd.DataFrame([empath_output])
 st.dataframe(df)
     
     
