@@ -16,13 +16,16 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 def run_empath():
     st.write("Empath Output")
     output = lexicon.analyze(txt_input, normalize=True)
+    return output
     #st.write(output)
-    df = pd.DataFrame([output])
-    st.dataframe(df)
+    #df = pd.DataFrame([output])
+    #st.dataframe(df)
     #st.expender(st.write("testing"))
   
 
 st.button("Analyse", on_click = run_empath)
+df = pd.DataFrame([on_click])
+st.dataframe(df)
     
     
 
