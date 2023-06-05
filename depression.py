@@ -16,6 +16,7 @@ def run_empath():
     #st.write(output)
     df = pd.DataFrame([output])
     st.dataframe(df)
+    st.expender(st.write("testing"))
   
     
     
