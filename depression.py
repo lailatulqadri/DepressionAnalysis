@@ -12,4 +12,4 @@ txt_input = st.text_area('Please add text to analyze', '''
     was the season of Light, it was the season of Darkness, it
     was the spring of hope, it was the winter of despair, (...)
     ''')
-st.write('Analyse:', run_sentiment_analysis(txt_input))
+#st.write('Analyse:', run_sentiment_analysis(txt_input))
