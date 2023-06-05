@@ -1,5 +1,7 @@
 import streamlit as st
 import pandas as pd
+from empath import Empath
+lexicon = Empath()
 
 st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
 
@@ -15,6 +17,12 @@ txt_input = st.text_area('Please add text to analyze', '''
 
 def run_empath():
     st.write("Empath")
+    lexicon.analyze(txt_input, normalize=True)
+    
+    
+    
+    
+    
 st.button("Analyse", on_click = run_empath)
 
 #st.write('Analyse:', run_sentiment_analysis(txt_input))
