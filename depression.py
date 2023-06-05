@@ -11,6 +11,7 @@ container1 = st.container()
 container1.text("Let's play with empath library to extract general linguistic features from text")
 txt_input = container1.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
+container1.button("Analyse", on_click = run_empath)
 
 container2 = st.container()
 def run_empath():
@@ -24,7 +25,7 @@ def run_empath():
     
     
     
-container1.button("Analyse", on_click = run_empath)
+
 
 
 
