@@ -7,8 +7,7 @@ st.title("Extracting Depression Linguistic Features by using Natural Language Pr
 
 #user may add text for analysis
 
-txt_input = st.text_area('Please add text to analyze', '''
-Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
+txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
 
 def run_empath():
