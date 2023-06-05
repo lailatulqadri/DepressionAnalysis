@@ -13,7 +13,7 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 
 
 
-def run_empath():
+def run_empath(output):
     st.write("Empath Output")
     output = lexicon.analyze(txt_input, normalize=True)
     return output
