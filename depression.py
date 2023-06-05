@@ -13,7 +13,7 @@ txt_input = st.text_area('Please add text to analyze', '''
     was the spring of hope, it was the winter of despair, (...)
     ''')
 
-def run_empath:
+def run_empath():
     st.write("Empath")
 st.button("Analyse", on_click = run_empath)
 
