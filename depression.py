@@ -22,4 +22,9 @@ def run_empath():
     
 st.button("Analyse", on_click = run_empath)
 
+my_expander = st.expander()
+my_expander.write('Hello there!')
+clicked = my_expander.button('Click me!')
+
+
 #st.write('Analyse:', run_sentiment_analysis(txt_input))
