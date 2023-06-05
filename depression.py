@@ -19,7 +19,7 @@ def run_empath():
     st.write("Empath")
     output = lexicon.analyze(txt_input, normalize=True)
     #st.write(output)
-    df = pd.DataFrame(output)
+    df = pd.DataFrame.from_dict(output)
     st.dataframe(df)
   
     
