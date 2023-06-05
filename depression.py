@@ -14,7 +14,7 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 
 
 def run_empath():
-    st.write("Empath")
+    st.write("Empath Output")
     output = lexicon.analyze(txt_input, normalize=True)
     #st.write(output)
     df = pd.DataFrame([output])
