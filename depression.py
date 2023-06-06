@@ -24,7 +24,10 @@ def run_empath():
 
 st.button("Analyse", on_click = run_empath)
 
-    
+def my_function(fname, lname):
+  st.write(fname + " " + lname)
+
+st.button("Test", onclick = my_function("Emil", "Refsnes"))
     
 
 
