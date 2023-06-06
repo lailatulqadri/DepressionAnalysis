@@ -28,6 +28,11 @@ def my_function(fname, lname):
   st.write(fname + " " + lname)
 
 st.button("Test", on_click = my_function("Email", "Refsnes"))
+
+if st.button('Say hello'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
     
 
 
