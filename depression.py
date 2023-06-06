@@ -22,17 +22,10 @@ def run_empath():
     #st.expender(st.write("testing"))
   
 
-st.button("Analyse", on_click = run_empath)
+empath_output = st.button("Empath Analyse")
 
-def my_function(fname, lname):
-  st.write(fname + " " + lname)
-
-st.button("Test", on_click = my_function("Email", "Refsnes"))
-
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
+if empath_output:
+    run_empath
     
 
 
