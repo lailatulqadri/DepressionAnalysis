@@ -22,7 +22,7 @@ def run_empath():
     #st.expender(st.write("testing"))
   
 
-empath_output = st.button("Analyse", on_click = run_empath)
+st.button("Analyse", on_click = run_empath)
 
     
     
