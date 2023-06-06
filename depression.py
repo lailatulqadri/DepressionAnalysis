@@ -6,6 +6,14 @@ lexicon = Empath()
 
 from LeXmo import LeXmo
 
+#list - important text features for depression identification:
+# 1) absolute words 
+absolutist_word =['absolutely','all','always','complete','completelt','constant','constantly','definitely','entire','ever','every','everyone','everything','full','must','never','nothing','totally','whole']
+# 2) first person singular & plurl (sometimes we use plural to refer to ourselve)
+first_person_singular = ['me','myself', 'i', 'mine', 'my', 'ourself']
+first_person_plural = ['we', 'us', 'our', 'ours', 'ourselves']
+
+
 
 st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
 #user may add text for analysis
@@ -33,7 +41,8 @@ with col2:
         st.dataframe(df_emo.T)
 
 with col3:
-    st.write("In progress..")
+    prnoun_output = st.button("Analyse Pronoun")
+    st.write("In progress")
 
 
 
