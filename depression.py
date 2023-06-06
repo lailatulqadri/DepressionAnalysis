@@ -27,7 +27,7 @@ st.button("Analyse", on_click = run_empath)
 def my_function(fname, lname):
   st.write(fname + " " + lname)
 
-st.button("Test", on_click = my_function("Emil", "Refsnes"))
+st.button("Test", on_click = my_function("Email", "Refsnes"))
     
 
 
