@@ -22,13 +22,13 @@ if empath_output:
     output = lexicon.analyze(txt_input, normalize=True)
     #st.write(output)
     df = pd.DataFrame([output])
-    st.dataframe(df)
+    st.dataframe(df.T)
 
 if emotion_output:
     st.write("Emotion Output")
     emo=LeXmo.LeXmo(txt_input)
     df_emo = pd.DataFrame([emo])
-    st.dataframe(df_emo)
+    st.dataframe(df_emo.T)
 
 
 
