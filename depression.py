@@ -11,21 +11,16 @@ st.text("Let's play with empath library to extract general linguistic features f
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
 
-
-
-def run_empath():
-    st.write("Empath Output")
-    output = lexicon.analyze(txt_input, normalize=True)
-    #st.write(output)
-    df = pd.DataFrame([output])
-    st.dataframe(df)
-    #st.expender(st.write("testing"))
   
 
 empath_output = st.button("Empath Analyse")
 
 if empath_output:
-    run_empath
+    st.write("Empath Output")
+    output = lexicon.analyze(txt_input, normalize=True)
+    #st.write(output)
+    df = pd.DataFrame([output])
+    st.dataframe(df)
     
 
 
