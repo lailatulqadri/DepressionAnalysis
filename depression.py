@@ -48,6 +48,9 @@ with col3:
     st.write("In progress")
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
+    #remove punctuations
+    txt_input = txt_input.translate(str.maketrans('', '', string.punctuation))
+    #set to lower case
     list_word = word_tokenize(txt_input.lower())
     st.write(list_word)
     pronoun_first_person = []
