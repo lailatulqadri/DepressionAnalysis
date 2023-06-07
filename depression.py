@@ -10,7 +10,6 @@ from nltk.tokenize import word_tokenize
 
 import string
 
-
 #list - important text features for depression identification:
 # 1) absolute words 
 absolutist_word =['absolutely','all','always','complete','completelt','constant','constantly','definitely','entire','ever','every','everyone','everything','full','must','never','nothing','totally','whole']
