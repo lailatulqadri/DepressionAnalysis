@@ -54,8 +54,10 @@ with col3:
     for word in list_word:
         if word in first_person_singular:
             pronoun_first_person.append(word)
+            st.write(word)
         elif word in first_person_plural:
             pronoun_first_person.append(word)
+            st.write(word)
     st.write(pronoun_first_person)
 
 
