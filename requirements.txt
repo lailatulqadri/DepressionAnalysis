@@ -1,6 +1,7 @@
+streamlit
 empath
 pandas
 LeXmo
 nltk
 string
-
+contractions
