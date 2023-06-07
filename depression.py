@@ -35,6 +35,33 @@ with col1:
         #st.write(output)
         df = pd.DataFrame([output])
         st.dataframe(df.T)
+with col2:
+    emotion_output = st.button("Analyse Emotion")
+    if emotion_output:
+        st.write("Emotion Output")
+        emo=LeXmo.LeXmo(txt_input)
+        df_emo = pd.DataFrame([emo])
+        st.dataframe(df_emo.T)
 
+with col3:
+    prnoun_output = st.button("Analyse Pronoun")
+    st.write("In progress")
+    # we will start with text preprocessing - need to tokenize the sentence into word by word
+    #use nltk wordtokenization    
+    #remove punctuations
+    txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
+    #st.write(txt_input1)
+    #set to lower case
+    list_word = word_tokenize(txt_input1.lower())
+    st.write("number of words in input text: ",len(list_word))
+    pronoun_first_person = []
+    for word in list_word:
+        if word in first_person_singular:
+            pronoun_first_person.append(word)
+        elif word in first_person_plural:
+            pronoun_first_person.append(word)
+    st.write("First person pronoun in input text:")
+    st.write(*pronoun_first_person, sep = ", ")
+    st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
 
 
