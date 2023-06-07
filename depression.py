@@ -6,6 +6,9 @@ lexicon = Empath()
 
 from LeXmo import LeXmo
 
+from nltk.tokenize import word_tokenize
+
+
 #list - important text features for depression identification:
 # 1) absolute words 
 absolutist_word =['absolutely','all','always','complete','completelt','constant','constantly','definitely','entire','ever','every','everyone','everything','full','must','never','nothing','totally','whole']
@@ -43,6 +46,16 @@ with col2:
 with col3:
     prnoun_output = st.button("Analyse Pronoun")
     st.write("In progress")
+    # we will start with text preprocessing - need to tokenize the sentence into word by word
+    #use nltk wordtokenization    
+    list_word = word_tokenize(txt_input)
+    pronoun_first_person = []
+    for word in list_word:
+        if word in first_person_singular:
+            pronoun_first_person.append(word)
+        elif word in first_person_plural:
+            pronoun_first_person.append(word)
+    st.write(pronoun_first_person)
 
 
 
