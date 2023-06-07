@@ -60,12 +60,10 @@ with col3:
     for word in list_word:
         if word in first_person_singular:
             pronoun_first_person.append(word)
-            st.write(word)
         elif word in first_person_plural:
             pronoun_first_person.append(word)
-            st.write(word)
-            
-    st.write(pronoun_first_person)
+    st.write("First person pronoun in input text":, )
+    st.write(*pronoun_first_person, sep = ", ")
     st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
 
 
