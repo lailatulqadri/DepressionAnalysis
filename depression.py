@@ -32,7 +32,6 @@ expanded_words = []
 for word in txt_input.split():
   # using contractions.fix to expand the shortened words
   expanded_words.append(contractions.fix(word))  
-   
 expanded_text = ' '.join(expanded_words)
 st.write(expanded_text)
 
