@@ -1,6 +1,6 @@
+contractions
 empath
 pandas
-contractions
 LeXmo
 nltk
 string
