@@ -48,14 +48,14 @@ with col3:
     st.write("In progress")
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
-    list_word = word_tokenize(txt_input)
+    list_word = word_tokenize(txt_input.lower())
     st.write(list_word)
     pronoun_first_person = []
-    for word.lower() in list_word:
+    for word in list_word:
         if word in first_person_singular:
             pronoun_first_person.append(word)
             st.write(word)
-        elif word.lower() in first_person_plural:
+        elif word in first_person_plural:
             pronoun_first_person.append(word)
             st.write(word)
             
