@@ -8,7 +8,7 @@ from LeXmo import LeXmo
 
 from nltk.tokenize import word_tokenize
 
-import string
+#import string
 
 
 #list - important text features for depression identification:
@@ -51,8 +51,8 @@ with col3:
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
     #remove punctuations
-    txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
-    st.write(txt_input1)
+    #txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
+    #st.write(txt_input1)
     #set to lower case
     list_word = word_tokenize(txt_input.lower())
     st.write(list_word)
