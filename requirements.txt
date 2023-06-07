@@ -4,4 +4,3 @@ pandas
 LeXmo
 nltk
 string
-contractions
