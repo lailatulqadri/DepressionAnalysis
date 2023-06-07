@@ -55,7 +55,7 @@ with col3:
     #st.write(txt_input1)
     #set to lower case
     list_word = word_tokenize(txt_input1.lower())
-    st.write(list_word)
+    st.write("number of words", list_word.len()
     pronoun_first_person = []
     for word in list_word:
         if word in first_person_singular:
@@ -66,6 +66,7 @@ with col3:
             st.write(word)
             
     st.write(pronoun_first_person)
+    st.write("percentage of fist person words in the input text", pronoun_first_person.len()/list_word.len())
 
 
 
