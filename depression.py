@@ -48,7 +48,7 @@ with col2:
         st.dataframe(df_emo.T)
 
 with col3:
-    prnoun_output = st.button("Analyse Pronoun")
+    pronoun_output = st.button("Analyse Pronoun")
     if pronoun_output:
         # we will start with text preprocessing - need to tokenize the sentence into word by word
         #use nltk wordtokenization    
