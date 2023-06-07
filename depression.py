@@ -30,7 +30,7 @@ expended_text = contractions.fix(txt_input)
 st.write(expended_text)
 
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3 , col4= st.columns(4)
 
 with col1:
     empath_output = st.button("Analyse Empath")
@@ -70,4 +70,21 @@ with col3:
         st.write(*pronoun_first_person)
         st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
 
-
+with col4:
+    absolute_output = st.button("Analyse Absolute")
+    if absolute_output:
+        st.write("Absulte output")
+        txt_input1 = expended_text.translate(str.maketrans('', '', string.punctuation))
+        #st.write(txt_input1)
+        #set to lower case
+        list_word = word_tokenize(txt_input1.lower())
+        st.write("number of words in input text: ",len(list_word))
+        absolute_word_list = []
+        for word in list_word:
+            if word in absolutist_word:
+                absolute_word_list.append(word)
+        st.write("Absulute words in input text:")
+        st.write(*absolute_word_list)
+        st.write("percentage of fist person words in the input text :", len(absolute_word_list)/len(list_word))
+        
+    
