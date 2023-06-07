@@ -19,7 +19,7 @@ first_person_plural = ['we', 'us', 'our', 'ours', 'ourselves']
 
 st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
 #user may add text for analysis
-st.txt("Let's play with empath library to extract general linguistic features from text")
+st.text("Let's play with empath library to extract general linguistic features from text")
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed. ''')
 
 #col1, col2, col3 = st.columns(3)
