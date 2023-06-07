@@ -49,6 +49,7 @@ with col3:
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
     list_word = word_tokenize(txt_input)
+    st.write(list_word)
     pronoun_first_person = []
     for word in list_word:
         if word in first_person_singular:
