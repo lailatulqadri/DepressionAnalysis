@@ -24,11 +24,6 @@ st.text("Let's play with empath library to extract general linguistic features f
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
 
-#firstly,we need to clean this text. But different analysis will required different level of text cleaning. 
-#1) expand text contractions. Example: I'll -> i will (we will use contraction library)
-#input_text_fixcontraction = contractions.fix(txt_input)
-#st.write(input_text_fixcontraction)
-
 col1, col2, col3 = st.columns(3)
 
 with col1:
