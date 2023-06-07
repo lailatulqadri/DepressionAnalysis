@@ -10,7 +10,7 @@ from nltk.tokenize import word_tokenize
 
 import string
 
-#import contractions
+import contractions
 
 #list - important text features for depression identification:
 # 1) absolute words 
