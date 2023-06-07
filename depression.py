@@ -56,7 +56,7 @@ with col3:
         #remove punctuations
         st.write("Pronoun output")
         txt_input1 = expended_text.translate(str.maketrans('', '', string.punctuation))
-        st.write(txt_input1)
+        #st.write(txt_input1)
         #set to lower case
         list_word = word_tokenize(txt_input1.lower())
         st.write("number of words in input text: ",len(list_word))
