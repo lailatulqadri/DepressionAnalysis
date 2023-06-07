@@ -58,6 +58,7 @@ with col3:
         elif word.lower() in first_person_plural:
             pronoun_first_person.append(word)
             st.write(word)
+            
     st.write(pronoun_first_person)
 
 
