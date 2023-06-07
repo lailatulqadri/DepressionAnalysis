@@ -26,14 +26,8 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 
 #firstly,we need to clean this text. But different analysis will required different level of text cleaning. 
 #1) expand text contractions. Example: I'll -> i will (we will use contraction library)
-
-# creating an empty list
-expanded_words = []   
-for word in txt_input.split():
-  # using contractions.fix to expand the shortened words
-  expanded_words.append(contractions.fix(word))  
-expanded_text = ' '.join(expanded_words)
-st.write(expanded_text)
+input_text_fixcontraction = contractions.fix(txt_input)
+st.write(input_text_fixcontraction)
 
 col1, col2, col3 = st.columns(3)
 
