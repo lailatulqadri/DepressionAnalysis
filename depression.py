@@ -8,7 +8,7 @@ from LeXmo import LeXmo
 
 from nltk.tokenize import word_tokenize
 
-#import string
+import string
 
 #import contractions
 
