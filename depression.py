@@ -26,7 +26,8 @@ st.write("Let's play with empath library to extract general linguistic features 
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed. ''')
 # firstly we need to clean the data. We will be using contractions dictionary. Contractions example: I'll -> I will
 #contraction output will be used for pronoun & absolute word identification.
-st.write(contractions.fix(txt_input))
+expended_text = contractions.fix(txt_input) 
+st.write(expended_text)
 
 
 col1, col2, col3 = st.columns(3)
@@ -54,7 +55,7 @@ with col3:
         #use nltk wordtokenization    
         #remove punctuations
         st.write("Pronoun output")
-        txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
+        txt_input1 = expended_text.translate(str.maketrans('', '', string.punctuation))
         st.write(txt_input1)
         #set to lower case
         list_word = word_tokenize(txt_input1.lower())
