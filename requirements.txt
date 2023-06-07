@@ -1,4 +1,5 @@
 empath
+pandas
 LeXmo
 nltk
 
