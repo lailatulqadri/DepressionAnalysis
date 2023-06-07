@@ -36,20 +36,5 @@ with col1:
         df = pd.DataFrame([output])
         st.dataframe(df.T)
 
-with col2:
-    emotion_output = st.button("Analyse Emotion")
-    if emotion_output:
-        st.write("Emotion Output")
-        emo=LeXmo.LeXmo(txt_input)
-        df_emo = pd.DataFrame([emo])
-        st.dataframe(df_emo.T)
 
 
-
-
-
-
-
-
-
-#st.write('Analyse:', run_sentiment_analysis(txt_input))
