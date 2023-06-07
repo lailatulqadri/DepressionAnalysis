@@ -23,45 +23,45 @@ st.write("Let's play with empath library to extract general linguistic features 
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed.
     ''')
 
-col1, col2, col3 = st.columns(3)
+#col1, col2, col3 = st.columns(3)
 
-with col1:
-    empath_output = st.button("Analyse Empath")
-    if empath_output:
-        st.write("Empath Output")
-        output = lexicon.analyze(txt_input, normalize=True)
+#with col1:
+#    empath_output = st.button("Analyse Empath")
+#    if empath_output:
+#        st.write("Empath Output")
+#        output = lexicon.analyze(txt_input, normalize=True)
         #st.write(output)
-        df = pd.DataFrame([output])
-        st.dataframe(df.T)
+#        df = pd.DataFrame([output])
+#        st.dataframe(df.T)
 
-with col2:
-    emotion_output = st.button("Analyse Emotion")
-    if emotion_output:
-        st.write("Emotion Output")
-        emo=LeXmo.LeXmo(txt_input)
-        df_emo = pd.DataFrame([emo])
-        st.dataframe(df_emo.T)
+#with col2:
+#    emotion_output = st.button("Analyse Emotion")
+#    if emotion_output:
+#        st.write("Emotion Output")
+#        emo=LeXmo.LeXmo(txt_input)
+#        df_emo = pd.DataFrame([emo])
+#        st.dataframe(df_emo.T)
 
-with col3:
-    prnoun_output = st.button("Analyse Pronoun")
-    st.write("In progress")
+#with col3:
+#    prnoun_output = st.button("Analyse Pronoun")
+#    st.write("In progress")
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
     #remove punctuations
-    txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
+#    txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
     #st.write(txt_input1)
     #set to lower case
-    list_word = word_tokenize(txt_input1.lower())
-    st.write("number of words in input text: ",len(list_word))
-    pronoun_first_person = []
-    for word in list_word:
-        if word in first_person_singular:
-            pronoun_first_person.append(word)
-        elif word in first_person_plural:
-            pronoun_first_person.append(word)
-    st.write("First person pronoun in input text:")
-    st.write(*pronoun_first_person, sep = ", ")
-    st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
+#    list_word = word_tokenize(txt_input1.lower())
+#    st.write("number of words in input text: ",len(list_word))
+#    pronoun_first_person = []
+#    for word in list_word:
+#        if word in first_person_singular:
+#            pronoun_first_person.append(word)
+#        elif word in first_person_plural:
+#            pronoun_first_person.append(word)
+#    st.write("First person pronoun in input text:")
+#    st.write(*pronoun_first_person, sep = ", ")
+#    st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
 
 
 
