@@ -51,10 +51,10 @@ with col3:
     # we will start with text preprocessing - need to tokenize the sentence into word by word
     #use nltk wordtokenization    
     #remove punctuations
-    #txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
+    txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
     #st.write(txt_input1)
     #set to lower case
-    list_word = word_tokenize(txt_input.lower())
+    list_word = word_tokenize(txt_input1.lower())
     st.write(list_word)
     pronoun_first_person = []
     for word in list_word:
