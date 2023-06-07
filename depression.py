@@ -51,11 +51,11 @@ with col3:
     list_word = word_tokenize(txt_input)
     st.write(list_word)
     pronoun_first_person = []
-    for word in list_word:
+    for word.lower() in list_word:
         if word in first_person_singular:
             pronoun_first_person.append(word)
             st.write(word)
-        elif word in first_person_plural:
+        elif word.lower() in first_person_plural:
             pronoun_first_person.append(word)
             st.write(word)
     st.write(pronoun_first_person)
