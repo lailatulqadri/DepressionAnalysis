@@ -1,6 +1,6 @@
 streamlit
-string
 pandas
 empath
 LeXmo
 nltk
+string
