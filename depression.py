@@ -18,8 +18,6 @@ absolutist_word =['absolutely','all','always','complete','completelt','constant'
 first_person_singular = ['me','myself', 'i', 'mine', 'my', 'ourself']
 first_person_plural = ['we', 'us', 'our', 'ours', 'ourselves']
 
-
-
 st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
 #user may add text for analysis
 st.text("Let's play with empath library to extract general linguistic features from text")
