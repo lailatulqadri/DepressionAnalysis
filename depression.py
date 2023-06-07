@@ -53,6 +53,7 @@ with col3:
         # we will start with text preprocessing - need to tokenize the sentence into word by word
         #use nltk wordtokenization    
         #remove punctuations
+        st.write("Pronoun output")
         txt_input1 = txt_input.translate(str.maketrans('', '', string.punctuation))
         st.write(txt_input1)
         #set to lower case
