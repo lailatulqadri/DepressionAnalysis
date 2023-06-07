@@ -24,7 +24,8 @@ st.title("Extracting Depression Linguistic Features by using Natural Language Pr
 #user may add text for analysis
 st.write("Let's play with empath library to extract general linguistic features from text")
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed. ''')
-
+# firstly we need to clean the data. We will be using contractions dictionary. Contractions example: I'll -> I will
+#contraction output will be used for pronoun & absolute word identification.
 st.write(contractions.fix(txt_input))
 
 
