@@ -78,6 +78,7 @@ with col4:
         #st.write(txt_input1)
         #set to lower case
         list_word = word_tokenize(txt_input1.lower())
+        print(list_word)
         st.write("number of words in input text: ",len(list_word))
         absolute_word_list = []
         for word in list_word:
