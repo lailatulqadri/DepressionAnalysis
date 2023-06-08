@@ -14,4 +14,4 @@ def read_file():
 
         f.close()
         list_symptoms =[signal_1] 
-        return list_symptpms
+        return signal_1
