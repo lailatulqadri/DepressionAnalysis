@@ -32,6 +32,8 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 expended_text = contractions.fix(txt_input) 
 st.write(expended_text)
 
+
+syptom_list = get_symptoms_lexicon()
 #depression_symptoms.hello()
 
 col1, col2, col3 , col4= st.columns(4)
