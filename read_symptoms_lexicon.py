@@ -1,7 +1,7 @@
 import json
 import contractions
 
-def get_symptoms_lexicon:
+def get_symptoms_lexicon():
     # Opening JSON file
     f = open('depression_lexicon.json',r)
 
