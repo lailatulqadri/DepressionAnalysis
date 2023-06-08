@@ -34,7 +34,7 @@ expended_text = contractions.fix(txt_input)
 st.write(expended_text)
 
 
-syptom_list = get_symptoms_lexicon()
+syptom_list = read_file()
 #depression_symptoms.hello()
 
 col1, col2, col3 , col4= st.columns(4)
