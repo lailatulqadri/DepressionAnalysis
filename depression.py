@@ -12,6 +12,8 @@ import string
 
 import contractions
 
+import json
+
 #list - important text features for depression identification:
 # 1) absolute words - source: https://speakai.co/absolutist-words/
 absolutist_word =['absolutely','all','always','complete','completely','constant','constantly','definitely','entire','ever','every','everyone','everything','full','must','never','nothing','totally','whole']
