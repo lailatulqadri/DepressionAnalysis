@@ -35,7 +35,7 @@ st.write(expended_text)
 
 
 symptom_list = read_file()
-st.write(symptom_list)
+#st.write(symptom_list)
 #depression_symptoms.hello()
 #check if depression signal 1 in input sentence
 for s_list in symptoms_list:
