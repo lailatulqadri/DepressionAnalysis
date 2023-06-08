@@ -11,6 +11,7 @@ from nltk.tokenize import word_tokenize
 import string
 
 import contractions
+import json
 
 from read_symptoms_lexicon import*
 
