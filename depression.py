@@ -12,7 +12,7 @@ import string
 
 import contractions
 
-from read_symptoms_lexicon import*
+from read_symptoms_lexicon1 import*
 
 
 #list - important text features for depression identification:
