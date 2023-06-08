@@ -13,7 +13,7 @@ import string
 import contractions
 
 import json
-import depression_symptoms
+#import depression_symptoms
 
 #list - important text features for depression identification:
 # 1) absolute words - source: https://speakai.co/absolutist-words/
@@ -32,7 +32,7 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 expended_text = contractions.fix(txt_input) 
 st.write(expended_text)
 
-depression_symptoms.hello()
+#depression_symptoms.hello()
 
 col1, col2, col3 , col4= st.columns(4)
 
