@@ -75,7 +75,6 @@ def read_file():
             #print(i)
             signal_10.append(i)
 
-        st.write(signal_1,"\n", signal_2,"\n", signal_3)
 
         # Closing file
         f.close()
