@@ -12,6 +12,8 @@ import string
 
 import contractions
 
+from read_symptoms_lexicon import*
+
 
 #list - important text features for depression identification:
 # 1) absolute words - source: https://speakai.co/absolutist-words/
