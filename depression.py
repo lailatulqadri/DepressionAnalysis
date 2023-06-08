@@ -37,6 +37,12 @@ st.write(expended_text)
 symptom_list = read_file()
 st.write(symptom_list)
 #depression_symptoms.hello()
+#check if depression signal 1 in input sentence
+for s_list in symptoms_list:
+  for s in s_list:
+      if s in expended_text.lower():
+          st.write(s,' signal detected')
+          
 
 col1, col2, col3 , col4= st.columns(4)
 
