@@ -2,7 +2,7 @@ import json
 import contractions
 
 def read_file():
-        f = open('depression_lexicon.json',r)
+        f = open('depression_lexicon.json','r')
         data = json.load(f)
 
         signal_1 = []
