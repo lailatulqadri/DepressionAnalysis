@@ -31,7 +31,7 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 # firstly we need to clean the data. We will be using contractions dictionary. Contractions example: I'll -> I will
 #contraction output will be used for pronoun & absolute word identification.
 expended_text = contractions.fix(txt_input) 
-st.write(expended_text)
+#st.write(expended_text)
 
 
 symptom_list = read_file()
