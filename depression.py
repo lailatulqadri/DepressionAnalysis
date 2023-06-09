@@ -83,7 +83,8 @@ with col3:
             elif word in first_person_plural:
                 pronoun_first_person.append(word)
         st.write("First person pronoun in input text:")
-        st.write(*pronoun_first_person)
+        #st.write(*pronoun_first_person)
+        st.write(pronoun_first_person)
         st.write("percentage of fist person words in the input text :", len(pronoun_first_person)/len(list_word))
 
 with col4:
