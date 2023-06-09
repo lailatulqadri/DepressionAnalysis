@@ -42,7 +42,7 @@ symptoms = []
 for s_list in symptom_list:
   for s in s_list:
       if s in expended_text.lower():
-          symptoms.append[s]
+          symptoms.append(s)
           #st.write(s,' signal detected')
           
 
