@@ -26,7 +26,7 @@ first_person_plural = ['we', 'us', 'our', 'ours', 'ourselves']
 st.title("Extracting Depression Linguistic Features by using Natural Language Processing")
 
 #user may add text for analysis
-st.write("Let's play with empath library to extract general linguistic features from text")
+st.write("The aim of this tool is to extract depression linguistic features in a depressed text such as depression symptoms, first person singular & plural, absolute words, emotions[LeXmo library] and lexical categories/ topic modelling [Empath library]. Add text and let's start analysing! ")
 txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do anything. Not wanting to be anything. Not wanting to be at all. I don't necessarily want to die. I just want to have never existed. ''')
 # firstly we need to clean the data. We will be using contractions dictionary. Contractions example: I'll -> I will
 #contraction output will be used for pronoun & absolute word identification.
@@ -38,13 +38,15 @@ symptom_list = read_file()
 #st.write(symptom_list)
 #depression_symptoms.hello()
 #check if depression signal 1 in input sentence
+symptoms = []
 for s_list in symptom_list:
   for s in s_list:
       if s in expended_text.lower():
-          st.write(s,' signal detected')
+          symptoms.append[s]
+          #st.write(s,' signal detected')
           
 
-col1, col2, col3 , col4= st.columns(4)
+col1, col2, col3 , col4, col5= st.columns(5)
 
 with col1:
     empath_output = st.button("Analyse Empath")
@@ -101,5 +103,8 @@ with col4:
         st.write("Absulute words in input text:")
         st.write(*absolute_word_list)
         st.write("percentage of fist person words in the input text :", len(absolute_word_list)/len(list_word))
-        
+  with col5:
+    extract_symptoms = st.button("Extract Symptoms")
+    if extract_symptoms:
+       st.write(symptoms)
     
