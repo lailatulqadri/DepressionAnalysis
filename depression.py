@@ -103,7 +103,7 @@ with col4:
         st.write("Absulute words in input text:")
         st.write(*absolute_word_list)
         st.write("percentage of fist person words in the input text :", len(absolute_word_list)/len(list_word))
-  with col5:
+with col5:
     extract_symptoms = st.button("Extract Symptoms")
     if extract_symptoms:
        st.write(symptoms)
