@@ -35,7 +35,8 @@ expended_text = contractions.fix(txt_input)
 #st.write(expended_text)
 depressed_button = st.button("Analyse this sentence")
 if depressed_button:
-  st.write(predict_text(expended_text))
+  output_depressed = predict_text(expended_text)
+  st.write(output_depressed)
   
 
 symptom_list = read_file()
