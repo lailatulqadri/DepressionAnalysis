@@ -4,6 +4,7 @@ numpy
 empath
 LeXmo
 nltk
+collections
 contractions
 sklearn
-collections
+
