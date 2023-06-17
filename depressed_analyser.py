@@ -97,8 +97,7 @@ def predict_text(input_text):
     #clustering
     predicted_labels_kmeans = modelkmeans.predict(Test)
 
-    st.inputText()
-
+    return true_test_labels[np.int(predicted_labels_knn[0])] 
     print ("\nBelow 3 sentences will be predicted against the learned nieghbourhood and learned clusters:\n1. ",\
     test_sentences[0],"\n2. ",test_sentences[1],"\n3. ")
     print ("\n-------------------------------PREDICTIONS BY KNN------------------------------------------")
