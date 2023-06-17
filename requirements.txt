@@ -4,7 +4,7 @@ empath
 LeXmo
 nltk
 contractions
-sklearns
+sklearn
 re
 numpy
 collections
