@@ -5,5 +5,4 @@ LeXmo
 nltk
 contractions
 sklearn
-numpy
 collections
