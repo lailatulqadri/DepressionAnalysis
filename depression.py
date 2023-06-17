@@ -14,6 +14,7 @@ import contractions
 import json
 
 from read_symptoms_lexicon import*
+from depressed_analyser import*
 
 
 #list - important text features for depression identification:
@@ -32,7 +33,9 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 #contraction output will be used for pronoun & absolute word identification.
 expended_text = contractions.fix(txt_input) 
 #st.write(expended_text)
-
+depressed_button = st.button("Analyse this sentence")
+if depressed_button:
+  predict_text(expended_text)
 
 symptom_list = read_file()
 #st.write(symptom_list)
