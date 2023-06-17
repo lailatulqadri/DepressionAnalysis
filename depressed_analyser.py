@@ -98,10 +98,3 @@ def predict_text(input_text):
     predicted_labels_kmeans = modelkmeans.predict(Test)
 
     return true_test_labels[np.int(predicted_labels_knn[0])] 
-    print ("\nBelow 3 sentences will be predicted against the learned nieghbourhood and learned clusters:\n1. ",\
-    test_sentences[0],"\n2. ",test_sentences[1],"\n3. ")
-    print ("\n-------------------------------PREDICTIONS BY KNN------------------------------------------")
-    print ("\n",test_sentences[0],":",true_test_labels[np.int(predicted_labels_knn[0])],\
-    "\n",test_sentences[1],":",true_test_labels[np.int(predicted_labels_knn[1])])
-
-"""From the output above, we can see that all of the 3 sentences tested are correctly clustered and classified into categories."""
