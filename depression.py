@@ -34,9 +34,9 @@ txt_input = st.text_area('Please add text to analyze', ''' Not wanting to do any
 expended_text = contractions.fix(txt_input) 
 #st.write(expended_text)
 depressed_button = st.button("Analyse this sentence")
-if depressed_button:
-  output_depressed = predict_text(expended_text)
-  st.write(output_depressed)
+#if depressed_button:
+#  output_depressed = predict_text(expended_text)
+#  st.write(output_depressed)
   
 
 symptom_list = read_file()
