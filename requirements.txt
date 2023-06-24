@@ -5,5 +5,4 @@ empath
 LeXmo
 nltk
 contractions
-sklearn
 
